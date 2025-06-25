@@ -1,0 +1,866 @@
+/* Custom CSS for Marketplace (style.css) - Modern, Professional, Clean Look */
+
+/* General Body and Font */
+body {
+    font-family: 'Public Sans', sans-serif; /* Changed to Public Sans as linked in dashboard.php for consistency */
+    background-color: #f8f9fa; /* Very light grey background */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #343a40; /* Dark grey text for readability */
+}
+
+/* Header / Navbar */
+.navbar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* Subtle bottom border */
+    background-color: #ffffff !important; /* White background */
+    padding: 0.75rem 1.5rem; /* Adjust padding for a more modern navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04); /* Subtle shadow for depth */
+}
+
+.navbar-brand-custom {
+    font-size: 1.8rem; /* Large and bold logo text */
+    font-weight: 700;
+    color: #343a40 !important; /* Dark text for logo */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand-custom:hover {
+    color: #696cff !important; /* Example hover color, adjust as needed */
+}
+
+.nav-link-custom {
+    color: #6c757d !important; /* Muted grey for navigation links */
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-right: 1.5rem; /* Spacing between links */
+    transition: color 0.3s ease;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom.active {
+    color: #343a40 !important; /* Darker on hover/active */
+}
+
+/* Navbar Dropdown */
+.navbar-nav .dropdown-menu {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.08);
+    border-radius: 0.5rem;
+}
+.navbar-nav .dropdown-item {
+    color: #343a40;
+    font-weight: 400;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+}
+.navbar-nav .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #696cff; /* Example hover color */
+}
+
+/* Cart Icon with Badge */
+.cart-icon-link {
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 0.75rem; /* Adjust padding for icon */
+    font-size: 1.5rem; /* Larger icon */
+}
+
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.65rem;
+    padding: 0.3em 0.5em;
+    border-radius: 50%;
+    transform: translate(30%, -30%); /* Adjust position */
+}
+
+
+/* Buttons in Navbar (Login/Register) */
+.btn-outline-dark {
+    border-color: #343a40;
+    color: #343a40;
+    transition: all 0.2s ease-in-out;
+}
+.btn-outline-dark:hover {
+    background-color: #343a40;
+    color: #fff;
+}
+.btn-dark {
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+.btn-dark:hover {
+    background-color: #212529;
+    border-color: #212529;
+}
+
+
+/* =============================== */
+/* Hero Section */
+/* =============================== */
+.hero-section {
+    min-height: 70vh; /* Make hero section tall */
+    background-color: #ffffff; /* Clean white background */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-logo {
+    max-width: 250px; /* Adjust size of the transparent logo */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    opacity: 0.8; /* Slight transparency for the logo */
+}
+
+.hero-section .display-3 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    color: #212529;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section .lead {
+    font-size: 1.25rem;
+    color: #6c757d;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hero Section Buttons */
+.hero-section .btn-lg {
+    padding: 1rem 3rem; /* Larger padding for hero buttons */
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+
+/* =============================== */
+/* Categories Section */
+/* =============================== */
+.categories-section {
+    background-color: #f8f9fa; /* Light background for section */
+    padding: 60px 0;
+}
+
+.categories-section h2 {
+    font-size: 2.2rem;
+    color: #212529;
+}
+
+.category-item {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    min-height: 180px; /* Ensure consistent height */
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* More pronounced shadow on hover */
+    color: #696cff !important; /* Example hover color, adjusted */
+}
+
+.category-icon {
+    font-size: 3rem; /* Large icon */
+    color: #6c757d; /* Muted color for icons */
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.category-item:hover .category-icon {
+    color: #696cff; /* Example hover color for icon, adjusted */
+}
+
+.category-item .card-title {
+    font-size: 1.2rem;
+    color: #343a40;
+    transition: color 0.3s ease;
+}
+.category-item:hover .card-title {
+    color: #696cff; /* Example hover color for title, adjusted */
+}
+
+
+/* =============================== */
+/* Featured Products Section */
+/* =============================== */
+.featured-products-section {
+    background-color: #ffffff; /* White background */
+    padding: 60px 0;
+}
+
+.featured-products-section h2 {
+    font-size: 2.2rem;
+    color: #212529;
+}
+
+.product-card {
+    border-radius: 0.5rem;
+    overflow: hidden; /* Ensures image corners are rounded */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-img-thumbnail {
+    width: 100%;
+    height: 200px; /* Fixed height for consistent image display */
+    object-fit: contain; /* Ensures entire image is visible, no cropping */
+    padding: 15px; /* Padding inside the image area */
+    background-color: #f0f2f5; /* Light background for image area */
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.product-card .card-body {
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #343a40;
+}
+
+.product-seller {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    color: #212529;
+}
+
+.product-card .btn {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.6rem 1.5rem;
+}
+
+
+/* =============================== */
+/* Footer */
+/* =============================== */
+.footer {
+    background-color: #212529 !important; /* Dark footer background */
+    color: #ffffff !important;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.footer h5 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.footer p {
+    color: #ced4da;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer .list-unstyled li a {
+    color: #ced4da;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+    display: inline-block;
+}
+
+.footer .list-unstyled li a:hover {
+    color: #696cff; /* Example hover color for links, adjusted */
+}
+
+.footer .social-icons a {
+    color: #ced4da;
+    transition: color 0.3s ease;
+}
+.footer .social-icons a:hover {
+    color: #696cff; /* Example hover color for icons, adjusted */
+}
+
+.footer .border-top {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.footer .text-muted {
+    color: #adb5bd !important;
+    font-size: 0.85rem;
+}
+
+
+/* =============================== */
+/* Refined Styles for Login/Register Pages (inspired by Sneat) */
+/* =============================== */
+
+.auth-page {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f4f8;
+    background-image: radial-gradient(#d3d7e0 1px, transparent 1px), radial-gradient(#d3d7e0 1px, transparent 1px);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+}
+
+.auth-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.auth-logo {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* This .app-logo-text applies to both navbar and auth logo */
+/* .app-logo-text is replaced by navbar-brand-custom for consistency on main page.
+   For auth pages, if you still want the Sneat logo with purple, ensure it's defined separately or change this. */
+/* For login/register pages, we'll keep a similar logo text but might not use the image. */
+
+.auth-card h4 {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #3b4253;
+    text-align: center;
+}
+
+.auth-card p {
+    font-size: 0.9em;
+    color: #6d758d;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-group-custom {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-label {
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #6d758d;
+    display: block;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.form-control {
+    border-radius: 0.375rem;
+    border: 1px solid #d9dee3;
+    padding: 0.625rem 0.875rem;
+    font-size: 0.9375rem;
+    color: #3b4253;
+    width: 100%;
+}
+
+.form-control:focus {
+    border-color: #8c8eff;
+    box-shadow: 0 0 0 0.25rem rgba(105, 108, 255, 0.25);
+}
+
+.btn-primary-sneat { /* Kept for Login/Register pages if you want a distinct button style */
+    background-color: #696cff;
+    border-color: #696cff;
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    font-weight: 500;
+    border-radius: 0.375rem;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(105, 108, 255, 0.2);
+    width: 100%;
+}
+
+.btn-primary-sneat:hover {
+    background-color: #5f61d5;
+    border-color: #5f61d5;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(105, 108, 255, 0.3);
+}
+
+.auth-links {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.auth-links a {
+    color: #696cff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+.form-check {
+    margin-top: 5px;
+    margin-bottom: 25px;
+    padding-left: 1.5em;
+}
+
+.form-check-input {
+    border-radius: 0.25em;
+    border: 1px solid #d9dee3;
+}
+.form-check-label {
+    font-size: 0.9em;
+    color: #6d758d;
+    user-select: none;
+}
+
+.forgot-password-link {
+    font-size: 0.85em;
+    color: #696cff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.forgot-password-link:hover {
+    text-decoration: underline;
+}
+
+/* Alerts */
+.alert-danger, .alert-success {
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.alert-danger {
+    background-color: #dc3545;
+}
+.alert-success {
+    background-color: #28a745;
+}
+
+/* =============================== */
+/* DASHBOARD SPECIFIC STYLES */
+/* =============================== */
+
+/* Main Layout Adjustments for Dashboard */
+.layout-wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 100vh; /* Ensure it takes full viewport height */
+    overflow: hidden; /* Hide overflow to prevent scroll issues */
+}
+
+.layout-container {
+    display: flex;
+    flex-grow: 1; /* Allow container to take available space */
+}
+
+/* Sidebar (Aside) */
+.layout-menu {
+    width: 260px; /* Standard sidebar width */
+    flex-shrink: 0;
+    background-color: #ffffff !important; /* White sidebar */
+    border-right: 1px solid #e0e0e0; /* Subtle right border */
+    box-shadow: 2px 0 10px rgba(0,0,0,0.03); /* Light shadow for separation */
+    /* REMOVED: padding-top: 1rem; */ /* This was causing the sidebar content to start lower */
+    padding-top: 0; /* Ensures the sidebar content starts from the very top of the layout-menu */
+    transition: all 0.3s ease; /* Smooth transition for opening/closing */
+    position: sticky; /* Make sidebar sticky */
+    top: 0; /* Align to top */
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Enable scrolling for long menus */
+    z-index: 1030; /* Ensure it's above content but below navbar on smaller screens */
+}
+
+.layout-menu.open {
+    transform: translateX(0%);
+}
+
+@media (max-width: 1199.98px) { /* Adjust breakpoint for larger screens */
+    .layout-menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        transform: translateX(-100%); /* Hidden by default on mobile */
+        z-index: 1040; /* Higher z-index for mobile overlay */
+    }
+}
+
+
+.app-brand {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0; /* Separator for brand */
+    margin-bottom: 1rem;
+}
+
+.app-brand-text {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #4CAF50 !important; /* A fresh green for the brand text */
+    /* Let's keep a primary color here for the brand, distinct from Barbie pink */
+}
+
+.app-brand-link {
+    text-decoration: none;
+}
+
+.menu-inner {
+    padding: 0 1rem;
+    padding-top: 1.5rem; /* Added this to bring the "Dashboard" menu item down, aligning it with the main content's new top */
+}
+
+.menu-item {
+    margin-bottom: 0.25rem;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-radius: 0.4rem; /* Slightly rounded corners for menu items */
+    color: #495057; /* Darker grey for menu links */
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.menu-link .menu-icon {
+    font-size: 1.25rem; /* Icon size */
+    margin-right: 0.75rem;
+    color: #6c757d; /* Muted icon color */
+    transition: color 0.2s ease;
+}
+
+.menu-item.active > .menu-link,
+.menu-item .menu-link:hover {
+    background-color: #e0f2f7; /* Light background for active/hover */
+    color: #007bff; /* Primary blue for active/hover text */
+}
+
+/* Subtle Barbie Pink Accent: For the active item's icon/text, or a subtle hover */
+.menu-item.active > .menu-link {
+    background-color: #e0f2f7; /* Reverted to original light background */
+    color: #007bff; /* Reverted to original primary blue */
+}
+
+.menu-item.active > .menu-link .menu-icon {
+    color: #007bff; /* Reverted to original primary blue */
+}
+
+.menu-item .menu-link:hover {
+     background-color: #F8F8FA; /* Light gray on hover */
+     color: #007bff; /* Primary blue on hover */
+}
+
+
+.menu-header {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    padding: 0 1rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #a0a0a0; /* Lighter grey for headers */
+    font-weight: 600;
+}
+
+/* Main Content Area */
+.layout-page {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa; /* Consistent background */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.content-wrapper {
+    flex-grow: 1;
+    /* ORIGINAL: padding: 1.5rem 1.5rem 0 1.5rem; */
+    /* Changed to remove the top padding directly from content-wrapper */
+    padding: 0 1.5rem 0 1.5rem; /* Removed top padding */
+}
+
+/* Navbar in Main Content (Top Nav) */
+.layout-navbar {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    padding: 0.75rem 1.5rem; /* Consistent padding */
+    height: auto; /* Allow content to dictate height */
+    min-height: 56px; /* Bootstrap default navbar height */
+    display: flex; /* Enable flexbox for alignment */
+    justify-content: space-between; /* Space out left and right items */
+    align-items: center; /* Vertically align items */
+    margin-bottom: 0 !important; /* Ensured no extra bottom margin */
+}
+
+/* This targets the main content container within the content-wrapper */
+/* It will now control the top padding for your dashboard cards */
+.container-xxl.flex-grow-1.container-p-y {
+    /* ORIGINAL: padding: 0 !important; (as you had it) */
+    /* This rule was likely causing content to be too high if content-wrapper had 0 padding */
+    padding-top: 1.5rem !important; /* Added top padding to align with the sidebar menu item */
+    padding-bottom: 1.5rem !important; /* Kept bottom padding */
+    padding-left: 1.5rem !important; /* Ensure left padding is consistent with right if desired */
+    padding-right: 1.5rem !important; /* Ensure right padding is consistent with left if desired */
+}
+
+
+.navbar-nav .dropdown-menu-end {
+    right: 0;
+    left: auto;
+}
+
+.navbar-nav .avatar {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.navbar-nav .avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar-nav .dropdown-user .dropdown-menu {
+    min-width: 12rem; /* Wider dropdown for user info */
+    padding: 0.75rem 0;
+}
+
+.navbar-nav .dropdown-user .dropdown-item {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+}
+
+/* Removed search-related CSS rules */
+/* .navbar-search-wrapper, .navbar-search-wrapper .search-toggler, etc. are no longer needed */
+
+/* Dashboard Cards */
+.card {
+    border-radius: 0.75rem; /* More rounded cards */
+    border: none; /* Remove default border */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Softer, more prominent shadow */
+    overflow: hidden; /* Ensure content stays within rounded borders */
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Slightly more emphasis on hover */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #343a40;
+}
+
+.card-body {
+    padding: 1.5rem; /* Generous padding */
+}
+
+/* Welcome Card Specifics */
+.card-body .text-primary {
+    color: #007bff !important; /* Reverted to original Bootstrap primary blue */
+}
+
+.card-body .btn-outline-primary {
+    border-color: #007bff; /* Reverted to original Bootstrap primary blue */
+    color: #007bff; /* Reverted to original Bootstrap primary blue */
+    transition: all 0.3s ease;
+}
+.card-body .btn-outline-primary:hover {
+    background-color: #007bff; /* Reverted to original Bootstrap primary blue */
+    color: #ffffff;
+}
+
+.card-body img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto;
+}
+
+/* Info Cards (Total Orders, Pending, Wishlist, Total Spent) */
+.card-title.d-flex {
+    margin-bottom: 1rem; /* Space below icon/title */
+}
+
+.avatar.flex-shrink-0 .bx {
+    font-size: 2.2rem; /* Larger icons for info cards */
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.05); /* Light background for icon circle */
+}
+
+/* Specific icon colors */
+.bx.bx-cart.text-info { color: #007bff !important; background-color: rgba(0, 123, 255, 0.1); }
+.bx.bx-time.text-warning { color: #ffc107 !important; background-color: rgba(255, 193, 7, 0.1); }
+.bx.bx-heart.text-danger { color: #dc3545 !important; background-color: rgba(220, 53, 69, 0.1); } /* Reverted to original Bootstrap danger red */
+.bx.bx-dollar.text-success { color: #28a745 !important; background-color: rgba(40, 167, 69, 0.1); }
+
+.card-title.mb-2 {
+    font-size: 1.8rem; /* Larger numbers for key metrics */
+    font-weight: 700;
+    color: #212529;
+}
+
+.fw-semibold.text-success,
+.fw-semibold.text-danger {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+.fw-semibold .bx {
+    font-size: 1rem;
+    margin-right: 0.2rem;
+}
+
+
+/* Recent Orders Table */
+.card-header {
+    background-color: #ffffff; /* White header for table card */
+    border-bottom: 1px solid #f0f0f0;
+    padding: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #343a40;
+}
+
+.table {
+    margin-bottom: 0; /* Remove default table margin */
+}
+
+.table thead th {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #6c757d;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1rem 1.5rem;
+}
+
+.table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #fdfdfd;
+}
+
+.table tbody td {
+    padding: 1rem 1.5rem;
+    vertical-align: middle;
+    color: #495057;
+    font-size: 0.9rem;
+}
+
+.table tbody td strong {
+    color: #343a40;
+}
+
+.table tbody td .badge {
+    padding: 0.4em 0.7em;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Specific badge colors (adjust if needed, using Bootstrap defaults for consistency) */
+.badge.bg-label-info { background-color: #e0f2f7 !important; color: #007bff !important; } /* Light blue for info */
+.badge.bg-label-warning { background-color: #fff3cd !important; color: #ffc107 !important; } /* Light yellow for warning */
+.badge.bg-label-success { background-color: #d4edda !important; color: #28a745 !important; } /* Light green for success */
+.badge.bg-label-danger { background-color: #f8d7da !important; color: #dc3545 !important; } /* Light red for danger */
+.badge.bg-label-primary { background-color: #e6e8ff !important; color: #696cff !important; } /* Light primary for primary */
+
+/* Table Dropdown Actions */
+.table .dropdown-toggle {
+    color: #6c757d;
+}
+.table .dropdown-menu {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.08);
+    border-radius: 0.5rem;
+}
+.table .dropdown-item {
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+    color: #343a40;
+}
+.table .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #696cff;
+}
+.table .dropdown-item .bx {
+    margin-right: 0.5rem;
+}
+
+/* Footer in Dashboard */
+.content-footer {
+    background-color: #ffffff !important; /* White footer for consistency with layout */
+    border-top: 1px solid #e0e0e0;
+    color: #6c757d !important;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.content-footer .mb-2 {
+    color: #6c757d;
+}
+
+/* Layout Overlays for Mobile Menu */
+.layout-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1039;
+    display: none;
+}
+
+.layout-overlay.show {
+    display: block;
+}
+
+/* Utility for hiding/showing elements (often used with JS for responsive design) */
+.d-xl-none { display: none !important; }
+@media (max-width: 1199.98px) {
+    .d-xl-none { display: block !important; }
+}
+@media (min-width: 1200px) {
+    .d-xl-none { display: none !important; } /* Ensure it's hidden on larger screens */
+}
+
+/* Specific styling for the menu toggle on smaller screens */
+.layout-menu-toggle {
+    cursor: pointer;
+}
